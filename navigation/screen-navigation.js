@@ -1,6 +1,6 @@
 
-import AddScreen from '../screens/add-screen';
-import GoalScreen from '../screens/goal-screen';
+import AddScreen from '../screens/AddScreen';
+import GoalScreen from '../screens/GoalScreen';
 import Colors from '../shared/colors';
 
 import { Ionicons } from "@expo/vector-icons";
@@ -51,23 +51,6 @@ function TabBarIcon({ ...props }) {
   return <Ionicons size={30} style={{ marginBottom: -3 }} {...props} />;
 }
 
-const TabOneStack = createStackNavigator();
-
-function TabOneNavigator() {
-  return (
-    <TabOneStack.Navigator
-      screenOptions={{
-        headerShown: false,
-      }}
-    >
-      <TabOneStack.Screen
-        name="TabOneScreen"
-        component={FavoriteStretchStack}
-        options={{ headerTitle: "Tab One Title" }}
-      />
-    </TabOneStack.Navigator>
-  );
-}
 
 const TabTwoStack = createStackNavigator();
 
